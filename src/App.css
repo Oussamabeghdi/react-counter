@@ -1,14 +1,42 @@
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
   height: 100vh;
 }
-p {
+header {
   padding: 50px;
+}
+
+.bouton {
+  color: black;
+  background-color: white;
+  border: white;
+  font-size: 40px;
+}
+.boutonreset {
+  border-radius: 5px;
+  background-color: slateblue;
+  color: white;
+}
+.counter {
+  font-size: 50px;
+  border-radius: 5px;
+  background-color: slateblue;
+  text-align: center;
+  color: white;
+  height: 50px;
+  width: 80px;
+}
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+
+  gap: 20px;
 }

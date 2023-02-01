@@ -4,19 +4,20 @@ const Counter = () => {
   const [counter, setCounter] = useState(0);
 
   return (
-    <div>
+    <div className="display">
+      {/* {counter <= 0 && <button> - </button>} */}
       <div className="buttons">
         <button
-          className="bouton+"
+          className="bouton"
           onClick={() => {
             setCounter(counter - 1);
           }}
         >
           -
         </button>
-
+        <div className="counter">{counter}</div>
         <button
-          className="bouton-"
+          className="bouton"
           onClick={() => {
             setCounter(counter + 1);
           }}
@@ -24,6 +25,14 @@ const Counter = () => {
           +
         </button>
       </div>
+      <button
+        className="boutonreset"
+        onClick={() => {
+          setCounter(0);
+        }}
+      >
+        Reset
+      </button>
     </div>
   );
 };
